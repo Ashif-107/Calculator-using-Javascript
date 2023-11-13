@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+
+}
+#ms{
+    width: 60px;
+    cursor: pointer;    
+}
+.icon{
+    position: absolute;
+    top: 20px;
+    right: 66px;
+}
+
+:root{
+    --primary-color:linear-gradient(to bottom right,yellow,whitesmoke);
+    --secondary-color: yellow;
+    --third-color: yellow;
+}
+.dark-theme{
+    --primary-color:linear-gradient(to bottom right,black,grey);
+    --secondary-color: whitesmoke;
+    --third-color: white;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background: var(--primary-color);
+
+}
+.Calculator{
+    border: 3px solid black;
+    width: 25%;
+    padding: 20px;
+    border-radius: 30px;
+    background: transparent;
+    box-shadow: 0px 5px 25px var(--secondary-color);
+
+}
+input{
+    width: 98%;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 5px 25px rgba(black);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+}
+input::placeholder{
+    color: black;
+}
+button{
+    border: 3px solid black;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 40%;
+    background: transparent;
+    color: black;
+    font-size: 20px ;
+    box-shadow: -8px -8px 15px var(--secondary-color);
+    cursor: pointer;   
+    font-weight: bolder;
+}
+.eq{
+    background-color: var(--third-color);
+    color: black;
+    font-weight: bolder;
+}
+.operator{
+    color: black;
+    font-weight: bolder;
+}
